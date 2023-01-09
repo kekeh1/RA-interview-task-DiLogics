@@ -41,7 +41,7 @@ lists = soup.find_all('a', class_= "topictitle")
 
 with open('UiPath_data.csv', 'w', encoding='utf8', newline='') as f:
     callwriter = writer(f)
-    header = ['Title', 'Link', 'Description', 'Answers']
+    header = ['Title', 'Link', 'Answers']
     callwriter.writerow(header)
 
     for i in range(len(lists)):
